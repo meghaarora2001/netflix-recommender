@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Netflix Recommendation System</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="">
+	
+</head>
+<style>
+	 .maincontent{
+      background-image: url(https://t4.ftcdn.net/jpg/02/86/32/31/360_F_286323187_mDk3N4nGDaPkUmhNcdBe3RjSOfKqx4nZ.jpg);
+      background-size: cover;
+      text-align: center;
+      padding-top:100px;
+      padding-bottom: 450px;
+    }
+
+  /* Headings */
+  
+  .big-heading {
+    /* font-family: "Montserrat-Black"; */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 65px;
+    color: #cce8c7;
+    line-height: 1.6;
+    text-align: center;
+	padding-top: 1px;
+  }
+  .big-heading2 {
+    /* font-family: "Montserrat-Black"; */
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #390f3f;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 310px;
+    padding-right: 60px;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .image1{
+    width: 65%;
+  }
+  
+  .text{
+    padding-top: 30px;
+    color: black;
+    font-size: large;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .container-fluid{
+    padding: 0% 15%;
+  }
+  
+  /* Sections */
+  
+  .colored-section {
+    background-image: linear-gradient(to right, #9f221d, #000b0b);
+    color: #fff;
+	margin-top: -5px;
+  }
+  
+  
+  /* Navigation Bar */
+  
+  .navbar {
+    padding: 0 0 7.5rem;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+  }
+  
+  
+  /* Title Section */
+  
+  #title {
+    background-color:#ad68b8;
+    color: beige;
+    text-align: left;
+  }
+  
+  #title .container-fluid {
+    padding: 2% 15% 10%;
+  }
+  
+  /* Title Image */
+  
+  .title-image {
+    position: absolute;
+    right: -10%;
+    height: 360px;
+    width: 500px;
+    margin-top: 70px;
+  }
+  
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  
+  input[type=text] {
+  background-color: #e3d7e4;
+  color: rgb(9, 0, 0);
+  padding-left: 20px;
+  width: 230px;
+  height: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+input[type=submit] {
+	background-color: #390f3f;
+	border-radius: 4px;
+  color: aliceblue;
+	border: 2px solid #0a000c;
+	margin-left: 12px;
+  width: 140px;
+  height: 40px;
+	font-family: 'Times New Roman', Times, serif;
+
+}
+.img1{
+  vertical-align: text-top;
+  border-style: none;
+  height: 45px;
+  margin-left: -136px;
+  padding-right: 130px;
+  
+}
+
+</style>
+<body>
+	<section class="colored-section" id="title">
+
+		<div class="container-fluid"> 
+	
+		  <!-- Nav Bar -->
+	
+		  <nav class="navbar navbar-expand-lg navbar-dark">
+        <img src="https://cdn.vox-cdn.com/thumbor/Yq1Vd39jCBGpTUKHUhEx5FfxvmM=/39x0:3111x2048/1200x800/filters:focal(39x0:3111x2048)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png
+        " alt="" srcset="" class="img1">
+	
+			<a class="navbar-brand" style="color: antiquewhite;" href="{{ url_for('index') }}">What to Watch?</a>
+	
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+				  <a class="nav-link" href="{{ url_for('movies') }}">Top 10 Movies</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="{{ url_for('series') }}">Top 10 TV shows</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="{{ url_for('search') }}">Search by Genre</a>
+				</li>
+			  </ul>
+	
+			</div>
+		  </nav>
+	<div>
+        <div class="row">
+
+            <div class="col-lg-6">
+              <h1 class="big-heading">Don't know what to watch next? We are here to help you out!</h1>
+              <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+              <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button> -->
+            </div>
+    
+            <div class="col-lg-6">
+              <img class="title-image" src="https://ak.picdn.net/shutterstock/videos/1013504180/thumb/1.jpg?ip=x480" alt="iphone-mockup">
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </section>
+	<!-- Recommendation System -->
+    <section class="maincontent">
+        <h1 class="big-heading2">Enter a TV-SHOW/MOVIE that you just watched on Netflix and we will recommend you what you can try next! </h1>
+		<p1><span></span></p1>
+		
+			
+			<form name="passdata" action="/about" method="post">
+			<input type="text"	 name="moviename">
+			<input type="submit" value="submit">
+
+    </section>
+        
+	</div>
+</form>
+</body>
+</html>

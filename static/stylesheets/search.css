@@ -1,0 +1,123 @@
+body{
+    background-image: linear-gradient(to right, #c32626, #000000);
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    /* background-image: url(https://images5.alphacoders.com/445/445155.jpg); */
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+h1{
+    padding-top: 5px;
+    
+    padding-left: 20px;
+    /* background-color: rgb(165, 30, 30); */
+    margin-left: 400px;
+    color: antiquewhite;
+    width: 666px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Abril Fatface', cursive;
+}
+.search{
+    padding-top: 0px;
+    margin-left: 400px;
+}
+.forms{
+    padding-top: 30px;
+    margin-left: 400px;
+    color: antiquewhite;
+    /* background-color: rgb(165, 30, 30); */
+    width: 666px;
+    padding-left: 49px;
+    padding-bottom: 12px;
+
+}
+.genre1{
+    font-size: larger;
+}
+h2{
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: black;
+    color: beige;
+}
+p{
+    font-size: 20px;
+    background-color: black;
+    color: beige;
+}
+.buttons{
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.buttons:hover{
+    background-color: #e30a19;
+    color: aliceblue;
+}
+.genres{
+    padding: 0.5% 1%;
+    width: 230px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: #f6edee;
+    margin-left: 20px;
+}
+.img1{
+    vertical-align: text-top;
+    border-style: none;
+    height: 45px;
+    margin-left: -136px;
+    padding-right: 130px;
+    
+  }
+  .colored-section {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+	margin-top: -5px;
+  }
+  .navbar {
+    padding: 0 0 0rem;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+  }
+  #title {
+    color: beige;
+    text-align: left;
+  }
+  
+  #title .container-fluid {
+    padding: 1% 10% 1%;
+
+  }
+  .container-fluid{
+    padding: 0% 15%;
+  }
+  ul{
+    background-color: black;
+    color: beige;
+    margin-right: 55px;
+    margin-top: 10px;
+    padding: 2% 2%;
+    margin-left: -275px;
+
+  }

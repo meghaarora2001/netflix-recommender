@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/search.css') }}">
+    <title>Search</title>
+</head>
+<body>
+        <!-- nav bar -->
+
+    <section class="colored-section" id="title">
+    <div class="container-fluid"> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <img src="https://cdn.vox-cdn.com/thumbor/Yq1Vd39jCBGpTUKHUhEx5FfxvmM=/39x0:3111x2048/1200x800/filters:focal(39x0:3111x2048)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png
+            " alt="" srcset="" class="img1">
+        
+                <a class="navbar-brand" style="color: antiquewhite;" href="{{ url_for('index') }}">What to Watch?</a>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('movies') }}">Top 10 Movies</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('series') }}">Top 10 TV shows</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('search') }}">Search by Genre</a>
+                    </li>
+                  </ul>
+        
+                </div>
+              </nav>
+        </div>
+    </section>
+
+    <h1>Search for  Movies by Genre</h1>
+    <div class="search"></div>
+    <form id="myform" method="post" class="forms">
+    
+        <label for="genre" class="genre1">Enter Genre </label>
+        <select id="genre" name="genre" class="genres"> 
+            <option value="28">Action</option>
+            <option value="12">Adventure</option>
+            <option value="16">Animation</option>
+            <option value="35">Comedy</option>
+            <option value="18">Drama</option>
+            <option value="10751">Family</option>
+            <option value="14">Fantasy</option>
+            <option value="27">Horror</option>
+            <option value="9648">Mystery</option>
+            <option value="10749">Romance</option>
+
+          </select>
+        
+        <input type="button" class="buttons" onclick="myFunction()" value="Submit ">
+    </form>
+    <script src="{{ url_for('static', filename='javas/search.js') }}"></script>
+</body>
+</html>

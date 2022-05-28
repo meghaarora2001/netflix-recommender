@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/static/stylesheets/result.css" />
+</head>
+<style>
+  body { 
+    background-image: linear-gradient(to right, #c32626, #000000);
+    font-family: 'Times New Roman', Times, serif;
+color: #000000;
+  background-size: cover;
+  text-align: center;
+  padding-top:5px;
+  
+
+}
+a, h1, h2       {
+   color: aliceblue; 
+   font-family: 'Abril Fatface', cursive;
+   font-size: 3.5rem;
+   padding-top: 60px;
+   margin-top: 100px;
+}
+h1, h2          { margin: 0; }
+h2              { 
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+.page {
+
+margin-left: auto;
+margin-right: auto;
+
+}	
+
+table.dataframe, .dataframe th, .dataframe td {
+border: none;
+border-bottom: 1px solid #040914;
+border-collapse: collapse;
+text-align:center;
+padding: 10px;
+margin-bottom: 40px;
+font-size: 1.2em;
+opacity: 90%;
+
+border: 1px solid black;
+border-radius: 5px;
+
+}
+
+tr:nth-child(odd)	{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+ background-color:#eee; }
+tr:nth-child(even)	{   font-family: 'Times New Roman', Times, serif;
+background-color:rgb(194, 117, 143);
+font-weight: bold;
+ }
+tr:hover            { background-color: #cbe17e;}
+
+  
+</style>
+<body>
+  
+<div align="center">
+  <h1 align="center" class="heading">Here are your recommendations</h1>
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+</body>
+</html>

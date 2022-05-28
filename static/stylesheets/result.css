@@ -1,0 +1,68 @@
+
+
+/* body            { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+a, h1, h2       { color: #377ba8; }
+h1, h2          { margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+.page {
+	
+  margin-left: auto;
+  margin-right: auto;
+
+}	
+
+table.dataframe, .dataframe th, .dataframe td {
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:center;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+  opacity: 90%;
+}
+
+tr:nth-child(odd)	{ background-color:#eee; }
+tr:nth-child(even)	{ background-color:#fff; }
+tr:hover            { background-color: #ffff99;} */
+
+
+
+body { 
+  background-image: linear-gradient(to right, #1a2980, #26d0ce);
+  background-size: cover;
+text-align: center;
+padding-top:5px;
+}
+a, h1, h2       {
+   color: black; 
+   font-family: 'Abril Fatface', cursive;
+   font-size: 2.5rem;
+   padding-top: 60px;
+}
+h1, h2          { margin: 0; }
+h2              { font-size: 1.2em; }
+
+.page {
+
+margin-left: auto;
+margin-right: auto;
+
+}	
+
+table.dataframe, .dataframe th, .dataframe td {
+border: none;
+border-bottom: 1px solid #040914;
+border-collapse: collapse;
+text-align:center;
+padding: 10px;
+margin-bottom: 40px;
+font-size: 1.2em;
+opacity: 90%;
+}
+
+tr:nth-child(odd)	{ background-color:#eee; }
+tr:nth-child(even)	{ background-color:rgb(191, 211, 227); }
+tr:hover            { background-color: #4e1de1;}
