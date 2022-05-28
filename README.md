@@ -26,6 +26,7 @@ To install and run the project on your local system, in project directory run th
 ```bash
   python app.py
 ```
+## Navigating through website
 
 
 ## Resources Used
