@@ -26,6 +26,10 @@ To install and run the project on your local system, in project directory run th
 ```bash
   python app.py
 ```
+
+<img width="538" alt="Screenshot 2022-05-29 at 6 45 17 PM" src="https://user-images.githubusercontent.com/72010555/170870848-7330f7a7-aa23-4bb5-8af0-8f14f8a39f08.png">
+
+
 ## Navigating through website
 Front page
 
